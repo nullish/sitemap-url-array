@@ -3,14 +3,14 @@ const fs = require('fs');
 const { resolve } = require('path');
 const parser = require('xml2json');
 
-const convertSitemap = async () => {
+const convertSitemap = async (dataStream = "./input/sitemap.xml", outputPath = "./input/sitemap.json") => {
 	/**
-	 * @function Convert sitemamp
-	 * Convert XML sitemap file to JSON 
+	 * @function convertSitemap - sitemamp
+	 * Convert XML sitemap file to JavaScript array 
+	 * @param {String} dataStream - input file path from local filesystem for sitemap XML
+	 * @param {String} outputPath - filepath for JS array to write out to.
 	 */
 
-	const dataStream = "./input/sitemap.xml";
-	const outputPath = "./input/sitemap.json";
 	const outStream = fs.createWriteStream(
 		outputPath,
 		{ flags: "a" } // appends data

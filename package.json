@@ -1,0 +1,25 @@
+{
+  "name": "sitemap-url-arry",
+  "version": "1.0.0",
+  "description": "Retrieves a sitemap and outputs URLs as Javascript array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullish/sitemap-url-arry.git"
+  },
+  "keywords": [
+    "sitemap"
+  ],
+  "author": "Nullish",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nullish/sitemap-url-arry/issues"
+  },
+  "homepage": "https://github.com/nullish/sitemap-url-arry#readme",
+  "dependencies": {
+    "xml2json": "^0.7.1"
+  }
+}
